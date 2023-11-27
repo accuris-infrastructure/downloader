@@ -28,7 +28,7 @@ jobs:
           sed -i "s/version = \"0.0.0\"/version = \"${REF:11}\"/" Cargo.toml
           git add Cargo.toml
           git commit -m "bump version for release"
-          git push -u origin $BRANCH
+          git push -f -u origin $BRANCH
 
 
 
